@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="Calculator-Styles/Calculator.css" />
+  </head>
+  <body>
+    <div class="container">
+      <p class="display-element"></p>
+      <div class="card">
+        <p>
+          <button onclick="updateCalculation('7')">7</button>
+          <button onclick="updateCalculation('8')">8</button>
+          <button onclick="updateCalculation('9')">9</button>
+          <button class="operation" onclick="updateCalculation(' + ')">
+            +
+          </button>
+        </p>
+
+        <p>
+          <button onclick="updateCalculation('4')">4</button>
+          <button onclick="updateCalculation('5')">5</button>
+          <button onclick="updateCalculation('6')">6</button>
+          <button class="operation" onclick="updateCalculation(' - ')">
+            -
+          </button>
+        </p>
+
+        <p>
+          <button onclick="updateCalculation('1')">1</button>
+          <button onclick="updateCalculation('2')">2</button>
+          <button onclick="updateCalculation('3')">3</button>
+          <button class="operation" onclick="updateCalculation(' * ')">
+            *
+          </button>
+        </p>
+
+        <p>
+          <button onclick="updateCalculation('0')">0</button>
+          <button onclick="updateCalculation('.')">.</button>
+          <button onclick="calculation= eval(calculation); displayEntity();">
+            =
+          </button>
+          <button class="operation" onclick="updateCalculation(' / ')">
+            /
+          </button>
+        </p>
+
+        <p>
+          <button
+            onclick="calculation = ''; 
+        // cleared will not save in memory if not added here
+        localStorage.setItem('calculation', calculation); displayEntity();"
+          >
+            Clear
+          </button>
+        </p>
+      </div>
+    </div>
+
+    <script src="Calculator-Js/Calculator.js"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+button {
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  .display-element {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .operation {
+    background-color: rgb(254, 160, 10);
+    font-size: 16px;
+  }
+
+  .container {
+    display: grid;
+    background-color: black;
+    justify-content: center;
+    width: 300px;
+  }
